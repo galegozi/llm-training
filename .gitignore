@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Local fine-tuning data and secrets
+data/*.jsonl
+.env
+.env.*
+!.env.example

@@ -1,0 +1,23 @@
+[project]
+name = "llm-training"
+version = "0.1.0"
+description = "Utilities for launching OpenAI supervised fine-tuning jobs."
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.99.0",
+]
+
+[project.scripts]
+start-openai-fine-tune = "fine_tuning.start_openai_fine_tune:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.6.0",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
